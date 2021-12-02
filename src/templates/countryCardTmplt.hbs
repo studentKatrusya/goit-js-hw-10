@@ -1,8 +1,9 @@
 {{#each this}}
 <div>
-    <p class=""><img src="{{flags.svg}}" width="50px" /> {{name.official}}</p>
-    <p><span class="">Capital:</span> {{capital}}</p>
-    <p><span class="">Population:</span> {{population}}</p>
+    <div class="flex">  <img src="{{flags.svg}}" width="50px" />
+    <h2>{{name.official}}</h2></div>
+    <p class="">Capital: <span class="">{{capital}}</span> </p>
+    <p>Population: <span class="">{{population}}</span> </p>
     <p>Languages: {{#each languages}}<span>{{ this}} </span>{{/each}}</p>
     
 </div>

@@ -25,7 +25,8 @@ function onChangeInput(e) {
 
   const input = e.target.value.trim();
 
-  if (!input) return (refs.countryList.innerHTML = '');
+  if (!input) return (refs.countryList.innerHTML = ''),
+    (refs.countryInfo.innerHTML = '');
    API.fetchCountries(input)
         .then(renderCardsTmlp)
       .catch(onFetchError);
