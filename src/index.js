@@ -45,7 +45,7 @@ function renderCardsTmlp(country) {
      refs.countryInfo.innerHTML = markup;
      refs.countryList.innerHTML = '';
    }
-   else if (country.length > 2 && country.length < 10)  {
+   else if (country.length >= 2 && country.length <= 10)  {
      refs.countryInfo.innerHTML = '';
   }
   
