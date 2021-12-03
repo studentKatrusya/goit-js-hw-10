@@ -40,7 +40,8 @@ function renderCardsTmlp(country) {
     refs.countryList.innerHTML = markupList;
    
    if (country.length > 10) {
-    Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
+     Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
+     refs.countryList.innerHTML = '';
   } else if (country.length === 1) {
      refs.countryInfo.innerHTML = markup;
      refs.countryList.innerHTML = '';
